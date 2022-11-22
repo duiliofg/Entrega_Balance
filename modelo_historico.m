@@ -266,11 +266,11 @@ for i=l_inicio:l_final
 
             if info(1,13) == 1 % verificar si el glaciar es rocoso
 
-                [parametros, flujos] = balance_ZN_tiempo_acotado(x_diario, To, ts, area_cal(qq), c, b, pairs_zn, alb_ice, 0.2, C, Avps,t_s,yr_mod ,info(22));
+                [parametros, flujos] = balance_ZN(x_diario, To, ts, area_cal(qq), c, b, pairs_zn, alb_ice, 0.2, C, Avps,t_s,yr_mod ,info(22));
 
             else
 
-                [parametros, flujos] = balance_ZN_tiempo_acotado(x_diario, To, ts, area_cal(qq), c, b, pairs_zn, alb_ice, 1, C, Avps,t_s,yr_mod ,info(22));
+                [parametros, flujos] = balance_ZN(x_diario, To, ts, area_cal(qq), c, b, pairs_zn, alb_ice, 1, C, Avps,t_s,yr_mod ,info(22));
 
             end
 
@@ -303,11 +303,11 @@ for i=l_inicio:l_final
 
             if info(1,13) == 1 % verificar si el glaciar es rocoso
 
-                [parametros, flujos] = balance_ZA_tiempo_acotado(x_diario, To, ts,  area_cal(qq), c, b, pairs, alb_ice, 0.2, yr_mod, info(22));
+                [parametros, flujos] = balance_ZA(x_diario, To, ts,  area_cal(qq), c, b, pairs, alb_ice, 0.2, yr_mod, info(22));
 
             else
 
-                [parametros, flujos] = balance_ZA_tiempo_acotado(x_diario, To, ts, area_cal(qq), c, b, pairs, alb_ice, 1, yr_mod, info(22));
+                [parametros, flujos] = balance_ZA(x_diario, To, ts, area_cal(qq), c, b, pairs, alb_ice, 1, yr_mod, info(22));
 
             end
 
